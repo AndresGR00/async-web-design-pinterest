@@ -6,7 +6,7 @@ export const SearchInput = () => {
   containerDiv.className = "pt-search-bar";
 
   const glass = document.createElement("img");
-  glass.src = "./public/glass.svg";
+  glass.src = "https://res.cloudinary.com/dbinlquvz/image/upload/v1701370542/3_Async_Web_Design_Pinterest/glass_kouudm.svg";
 
   const input = document.createElement("input");
   input.type = "text";

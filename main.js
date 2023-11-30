@@ -16,9 +16,9 @@ const printHeader = () => {
   RectangularButton("Explorar", "#", "");
   RectangularButton("Crear", "#", "");
   SearchInput();
-  CircleButton("./public/bell.svg", "#");
-  CircleButton("./public/comment.svg", "#");
-  CircleButton("./public/profile-picture.png", "#");
+  CircleButton("https://res.cloudinary.com/dbinlquvz/image/upload/v1701370541/3_Async_Web_Design_Pinterest/bell_u3fvdt.svg", "#");
+  CircleButton("https://res.cloudinary.com/dbinlquvz/image/upload/v1701370541/3_Async_Web_Design_Pinterest/comment_lvnrtl.svg", "#");
+  CircleButton("https://res.cloudinary.com/dbinlquvz/image/upload/v1701370541/3_Async_Web_Design_Pinterest/profile-picture_duafs0.png", "#");
 };
 
 const printMain = () => {
