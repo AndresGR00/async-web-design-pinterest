@@ -1,0 +1,17 @@
+.pt-grid-img {
+  height: auto;
+  width: 100%; 
+  border-radius: 13px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.pt-grid-img:hover{
+  filter:brightness(0.4);;
+}
+
+@media screen and (max-width: 768px) {
+  .pt-grid-img {
+    margin: 3px 0;
+  }
+}

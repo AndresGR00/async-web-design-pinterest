@@ -1,0 +1,27 @@
+.pt-search-bar{
+    height: 48px;
+    display: flex;
+    border-radius: 24px;
+    background-color: var(--pt-very-light-grey-color);
+    padding: 0 15px;
+    flex-grow: 1;
+}
+
+.pt-search-bar img{
+    width: 16px;
+}
+
+.pt-search-bar input{
+    border: none;
+    color: var(--pt-dark-grey-color);
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 768px){
+    .pt-search-bar{
+        display: none;
+    }
+}

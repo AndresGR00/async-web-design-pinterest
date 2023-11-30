@@ -1,0 +1,31 @@
+.pt-rectangular-button{
+    height: 48px;
+    border-radius: 24px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--pt-font-weight-semibold);
+    color: var(--pt-black-color);
+    
+}
+
+.pt-rectangular-button:active{
+    background-color: var(--pt-black-color);
+    color: var(--pt-white-color);
+}
+
+.pt-active-button{
+    background-color: var(--pt-black-color);
+    color: var(--pt-white-color);
+}
+
+@media screen and (max-width: 475px){
+    .pt-rectangular-button{
+        font-size: 12px;
+        padding: 0 5px;
+        height: 28px;
+    }
+}
