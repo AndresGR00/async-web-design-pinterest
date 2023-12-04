@@ -10,6 +10,12 @@
   filter:brightness(0.4);;
 }
 
+/* H4 de "No se han encontrado resultados" */
+.pt-no-result-found{
+  padding: 20px 0;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .pt-grid-img {
     margin: 3px 0;

@@ -17,20 +17,32 @@ export async function getImages(query, page, perPage = 17) {
 }
 
 const showImages = (images) => {
-  const main = document.querySelector(".pt-main");  
+  const main = document.querySelector(".pt-main");
+  
+  const notFoundResults = document.createElement('h4');
+  notFoundResults.textContent = 'No se han encontrado resultados';
+  notFoundResults.className = 'pt-no-result-found';
+  notFoundResults.style.display = 'none';
+  main.appendChild(notFoundResults);
 
-  images.forEach((image) => {
-    const a = document.createElement('a');
-    a.href = image.urls.full;
-
-    const imgElement = document.createElement("img");
-    imgElement.className = "pt-grid-img";
-    imgElement.src = image.urls.regular;
-    imgElement.alt = image.alt_description;
-
-    a.appendChild(imgElement);
-    main.appendChild(a);
-  });
+  if(images.length === 0){
+      notFoundResults.style.display = 'block';
+      main.classList.add('pt-flex');
+  } else {
+    main.classList.remove('pt-flex');
+    images.forEach((image) => {
+      const a = document.createElement('a');
+      a.href = image.urls.full;
+  
+      const imgElement = document.createElement("img");
+      imgElement.className = "pt-grid-img";
+      imgElement.src = image.urls.regular;
+      imgElement.alt = image.alt_description;
+  
+      a.appendChild(imgElement);
+      main.appendChild(a);
+    });
+  }
 };
 
 const loadMoreImages = async () => {

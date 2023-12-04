@@ -22,9 +22,17 @@
     color: var(--pt-white-color);
 }
 
+@media screen and (max-width: 541px){
+    .pt-rectangular-button{
+        font-size: 15px;
+        padding: 0 5px;
+        height: 28px;
+    }
+}
+
 @media screen and (max-width: 475px){
     .pt-rectangular-button{
-        font-size: 12px;
+        font-size: 10px;
         padding: 0 5px;
         height: 28px;
     }

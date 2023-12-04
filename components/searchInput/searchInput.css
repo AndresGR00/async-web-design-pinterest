@@ -22,6 +22,7 @@
 
 @media screen and (max-width: 768px){
     .pt-search-bar{
-        display: none;
+        order: 1;
+        height: 38px;
     }
 }
